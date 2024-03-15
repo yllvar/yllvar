@@ -15,13 +15,13 @@ Here are some ideas to get you started:
 - 👯 I’m looking to collaborate on ...
 -->
 
-Hello, my name is Iqbal and I am a master's student majoring in Economic at the [London School of Economics and Political Science (LSE)](https://www.lse.ac.uk/). I also have a background in Machine Learning from the University Technology Malaysia. I have experience in quantitative trading, algorithm development, multichain blockchain development, and consulting for Web3 projects.
+Hello, my name is Iqbal and I have Economic from [London School of Economics and Political Science (LSE)](https://www.lse.ac.uk/). I also have a background in Machine Learning Programming from the University Technology Malaysia. I have experience in quantitative trading, algorithm development, multichain blockchain development, and consulting for Web3 projects.
 
 - 🔭 I’m currently researching at the intersection of economics, machine learning, and blockchain technology.
 - 💬 Brainstorm with me over technology, algorithms, and blockchain projects.
 - 📫 How to reach me: yllvaranwar@gmail.com
 - 😄 Pronouns: bro
-- ⚡ Fun fact: I'm always up for a game of chess!
+- ⚡ Fun fact: No idea is a bad idea until it become bad!
 - 📝 Resume: Currently unavailable.
 
 **Languages and Tools:** 
