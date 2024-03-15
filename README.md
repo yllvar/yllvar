@@ -43,5 +43,3 @@ Hello, my name is Iqbal and I am a master's student majoring in Economic at the 
 
 ![Iqbal's Github Stats](https://github-readme-stats.vercel.app/api?username=yllvar&count_private=true&show_icons=true&include_all_commits=true)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=yllvar&hide=TeX&layout=compact)
-
-![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=yllvar.yllvar)
