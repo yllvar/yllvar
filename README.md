@@ -17,7 +17,7 @@ Bro
 No idea is a bad idea until it becomes bad!
 
 ## 📝 Resume
-[My Profile uwuuu...](https://iqbal.uwu.ai/)
+[My CV is on my Profile on this link uwuuu...](https://iqbal.uwu.ai/)
 
 
 ### 🎯 Skills
