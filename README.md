@@ -8,7 +8,7 @@ I'm an Economics graduate from LSE with a background in Machine Learning Program
 Delving into the fascinating intersection of economics, machine learning, and blockchain technology.
 
 ## 💬 Let's Connect
-Let's brainstorm together on technology, algorithms, and blockchain projects. Reach out to me at [yllvaranwar@gmail.com](mailto:yllvaranwar@gmail.com) for collaboration opportunities and freelance gigs.
+Let's brainstorm together on technology, algorithms, and blockchain projects.
 
 ## 😄 Pronouns
 Bro
