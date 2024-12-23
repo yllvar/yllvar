@@ -25,7 +25,7 @@ Every groundbreaking idea started as a "crazy" thought.
 ---
 
 ### 🎯 Core Skills
-
+```
 #### ⌨️ Programming Languages
 <p>
     <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img alt="JavaScript"
@@ -96,6 +96,3 @@ Every groundbreaking idea started as a "crazy" thought.
 ---
 
 ![Visitors](https://komarev.com/ghpvc/?username=pcaversaccio&color=blue&style=flat&label=Visitors)
-```
-
-This version maintains professionalism while highlighting your expertise and unique qualities.
