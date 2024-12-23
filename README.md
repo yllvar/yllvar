@@ -1,29 +1,32 @@
-# Hi there! 👋
+```markdown
+# Welcome! 👋
 
-I aspire to be a scientist in Finance, starting as a self-taught developer and learning new things at a fast pace with the help of various GPT models. As a day-to-day quantitative developer, I'm passionate about developing trading algorithms, building fun or anarchic stuff on blockchain, and collaborating on innovative projects in the statistical finance and algorithmic trading technology sectors. 📈💻 In between coding, I shred my electric guitar and headbang; it sometimes helps fix errors.
+I am a driven finance enthusiast and quantitative developer with a strong foundation in economics, machine learning, and blockchain technologies. My journey began as a self-taught developer, fueled by curiosity and a passion for innovation. Today, I specialize in designing and implementing sophisticated trading algorithms, pioneering blockchain solutions, and pushing the boundaries of statistical finance.
 
-I'm an Economics graduate from LSE with a background in Machine Learning Programming from the UTM. I specialize in quantitative trading, machine learning modeling, algorithmic trading development, multichain blockchain development, and consulting for Web3 projects.
+An Economics graduate from the London School of Economics (LSE), I further honed my expertise in Machine Learning Programming at the University of Toronto Mississauga (UTM). My professional focus lies at the intersection of quantitative trading, machine learning modeling, algorithmic trading, and multichain blockchain development. Beyond work, I enjoy playing the electric guitar, blending creativity with logic to energize my problem-solving process.
+
+---
 
 ## 🔭 Current Focus
-Delving into the fascinating intersection of economics, machine learning, and blockchain technology.
+Exploring the dynamic nexus of economics, machine learning, and blockchain technology to drive impactful solutions in finance and technology.
 
-## 💬 Let's Connect
-Let's brainstorm together on technology, algorithms, and blockchain projects.
-
-## 😄 Pronouns
-Bro
+## 💬 Let's Collaborate
+Open to discussions and collaborations on:
+- Advanced trading algorithms
+- Blockchain development
+- Machine learning applications in finance
 
 ## ⚡ Fun Fact
-No idea is a bad idea until it becomes bad!
+Every groundbreaking idea started as a "crazy" thought.
 
 ## 📝 Resume
-[My CV is on my Profile on this link uwuuu...](https://iqbal.uwu.ai/)
+[Explore my CV here](https://iqbal.uwu.ai/)
 
+---
 
-### 🎯 Skills
+### 🎯 Core Skills
 
-#### ⌨️ Programming languages
-
+#### ⌨️ Programming Languages
 <p>
     <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img alt="JavaScript"
         src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"/></a>
@@ -37,8 +40,7 @@ No idea is a bad idea until it becomes bad!
 
 - [🐍 Vyper](https://vyper.readthedocs.io)
 
-#### 🎛 Frameworks and runtime environments
-
+#### 🎛 Frameworks and Runtime Environments
 <p>
     <a href="https://angular.io" target="_blank"><img alt="Angular"
         src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white"/></a>
@@ -55,8 +57,7 @@ No idea is a bad idea until it becomes bad!
 - [Hardhat](https://hardhat.org)
 - [Truffle Suite](https://trufflesuite.com)
 
-#### 🗃 Package, dependency, and environment management
-
+#### 🗃 Dependency and Environment Management
 <p>
     <a href="https://docs.conda.io" target="_blank"><img alt="Conda"
         src="https://img.shields.io/badge/conda-342B029?&style=for-the-badge&logo=anaconda&logoColor=white"/></a>
@@ -68,8 +69,7 @@ No idea is a bad idea until it becomes bad!
         src="https://img.shields.io/badge/Yarn-2C8EBB?style=for-the-badge&logo=yarn&logoColor=white"/></a>
 </p>
 
-#### 🛠 Toolings, platforms, infrastructure providers, and libraries
-
+#### 🛠 Tools, Platforms, and Libraries
 <p>
     <a href="https://aws.amazon.com" target="_blank"><img alt="AWS"
         src="https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white"/></a>
@@ -93,12 +93,9 @@ No idea is a bad idea until it becomes bad!
 - [ethers.js](https://docs.ethers.io)
 - [web3.js](https://web3js.readthedocs.io)
 
-### 📦 `npm` packages
-
-- [xdeployer](https://www.npmjs.com/package/xdeployer) – A [Hardhat](https://hardhat.org) plugin to deploy your smart contracts across multiple Ethereum Virtual Machine (EVM) chains with the same deterministic address.
-
-### 📚 Smart contract libraries
-
-- [🐍 snekmate](https://github.com/pcaversaccio/snekmate) – State-of-the-art, highly opinionated, hyper-optimised, and secure 🐍[Vyper](https://github.com/vyperlang/vyper) smart contract building blocks.
+---
 
 ![Visitors](https://komarev.com/ghpvc/?username=pcaversaccio&color=blue&style=flat&label=Visitors)
+```
+
+This version maintains professionalism while highlighting your expertise and unique qualities.
