@@ -2,7 +2,7 @@
 
 I am a driven finance enthusiast and quantitative developer with foundation in quantitative finance, economics, machine learning, and blockchain technologies. My journey began as a self-taught developer, fueled by curiosity and a passion for innovation. 
 
-Today, I continue in designing and implementing sophisticated trading algorithms, building blockchain tools and solutions, and pushing the boundaries of for Agentic Quantitative Finance.
+Today, I continue in designing and implementing sophisticated trading algorithms, building blockchain tools and solutions, and pushing the boundaries of for Agentic Quant Intelligence.
 
 <img width="596" alt="Screenshot 2025-02-04 at 10 24 31" src="https://github.com/user-attachments/assets/bb366fef-69ef-40ea-9209-a6eea66ca7fd" />
 
