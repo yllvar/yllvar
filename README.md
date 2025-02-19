@@ -4,7 +4,6 @@ I am a driven finance enthusiast and quantitative developer with foundation in q
 
 Today, I continue in designing and implementing sophisticated trading algorithms, building blockchain tools and solutions, and pushing the boundaries of for Autonomous Quant Intelligence.
 
-<img width="596" alt="Screenshot 2025-02-04 at 10 24 31" src="https://github.com/user-attachments/assets/bb366fef-69ef-40ea-9209-a6eea66ca7fd" />
 
 # 🎯 What I Do
 
