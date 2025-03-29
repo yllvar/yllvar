@@ -1,358 +1,135 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quant Developer Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        :root {
-            --primary: #6e48aa;
-            --secondary: #9d50bb;
-            --dark: #1a1a2e;
-            --light: #f8f9fa;
-            --success: #28a745;
-            --danger: #dc3545;
-            --warning: #ffc107;
-            --info: #17a2b8;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        
-        body {
-            background: linear-gradient(135deg, var(--dark), #16213e);
-            color: var(--light);
-            min-height: 100vh;
-            overflow-x: hidden;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-        
-        header {
-            text-align: center;
-            margin-bottom: 3rem;
-            position: relative;
-            overflow: hidden;
-            padding: 2rem;
-            border-radius: 15px;
-            background: rgba(26, 26, 46, 0.7);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            animation: fadeIn 1s ease-out;
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        
-        .particles {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-        }
-        
-        .particle {
-            position: absolute;
-            background: rgba(255, 255, 255, 0.5);
-            border-radius: 50%;
-            animation: float 15s infinite linear;
-        }
-        
-        @keyframes float {
-            0% { transform: translateY(0) rotate(0deg); opacity: 1; }
-            100% { transform: translateY(-1000px) rotate(720deg); opacity: 0; }
-        }
-        
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            background: linear-gradient(to right, var(--primary), var(--secondary));
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            display: inline-block;
-        }
-        
-        .tagline {
-            font-size: 1.5rem;
-            margin-bottom: 1.5rem;
-            color: #ccc;
-        }
-        
-        .intro {
-            font-size: 1.1rem;
-            line-height: 1.6;
-            margin-bottom: 2rem;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .section {
-            background: rgba(26, 26, 46, 0.7);
-            border-radius: 15px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            animation: slideIn 0.8s ease-out;
-        }
-        
-        @keyframes slideIn {
-            from { opacity: 0; transform: translateX(-20px); }
-            to { opacity: 1; transform: translateX(0); }
-        }
-        
-        h2 {
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-            color: var(--primary);
-            position: relative;
-            display: inline-block;
-        }
-        
-        h2::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 100%;
-            height: 3px;
-            background: linear-gradient(to right, var(--primary), var(--secondary));
-            border-radius: 3px;
-        }
-        
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 1.5rem;
-            margin-top: 1.5rem;
-        }
-        
-        .skill-category {
-            background: rgba(30, 30, 60, 0.7);
-            border-radius: 10px;
-            padding: 1.5rem;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .skill-category:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-        }
-        
-        h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: var(--secondary);
-        }
-        
-        .badge-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin-bottom: 1rem;
-        }
-        
-        .badge {
-            display: inline-block;
-            padding: 0.3rem 0.8rem;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: bold;
-            background: rgba(109, 72, 170, 0.2);
-            border: 1px solid var(--primary);
-            color: #ddd;
-            transition: all 0.3s ease;
-        }
-        
-        .badge:hover {
-            background: var(--primary);
-            color: white;
-            transform: scale(1.05);
-        }
-        
-        .game-container {
-            background: rgba(20, 20, 40, 0.8);
-            border-radius: 15px;
-            padding: 2rem;
-            margin-top: 3rem;
-            text-align: center;
-            animation: pulse 2s infinite alternate;
-        }
-        
-        @keyframes pulse {
-            from { box-shadow: 0 0 10px rgba(157, 80, 187, 0.5); }
-            to { box-shadow: 0 0 20px rgba(157, 80, 187, 0.8); }
-        }
-        
-        .game-title {
-            font-size: 1.8rem;
-            margin-bottom: 1.5rem;
-            color: var(--warning);
-        }
-        
-        .game-description {
-            margin-bottom: 1.5rem;
-            color: #ccc;
-        }
-        
-        .game-stats {
-            display: flex;
-            justify-content: space-around;
-            margin-bottom: 1.5rem;
-            font-size: 1.2rem;
-        }
-        
-        .stat {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        
-        .stat-value {
-            font-weight: bold;
-            font-size: 1.5rem;
-            color: var(--success);
-        }
-        
-        .crypto-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 1rem;
-            margin-bottom: 2rem;
-        }
-        
-        .crypto-card {
-            background: rgba(40, 40, 80, 0.7);
-            border-radius: 10px;
-            padding: 1rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .crypto-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-        }
-        
-        .crypto-card.selected {
-            background: rgba(40, 167, 69, 0.2);
-            border: 2px solid var(--success);
-        }
-        
-        .crypto-name {
-            font-weight: bold;
-            margin-bottom: 0.5rem;
-        }
-        
-        .crypto-price {
-            font-size: 1.2rem;
-            color: var(--success);
-        }
-        
-        .crypto-change {
-            font-size: 0.9rem;
-        }
-        
-        .positive {
-            color: var(--success);
-        }
-        
-        .negative {
-            color: var(--danger);
-        }
-        
-        .game-controls {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            margin-bottom: 1.5rem;
-        }
-        
-        .btn {
-            padding: 0.8rem 1.5rem;
-            border-radius: 30px;
-            border: none;
-            font-weight: bold;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-size: 1rem;
-        }
-        
-        .btn-primary {
-            background: linear-gradient(to right, var(--primary), var(--secondary));
-            color: white;
-        }
-        
-        .btn-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(157, 80, 187, 0.4);
-        }
-        
-        .btn-secondary {
-            background: rgba(255, 255, 255, 0.1);
-            color: white;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-        
-        .btn-secondary:hover {
-            background: rgba(255, 255, 255, 0.2);
-        }
-        
-        .game-log {
-            height: 150px;
-            overflow-y: auto;
-            background: rgba(0, 0, 0, 0.3);
-            border-radius: 10px;
-            padding: 1rem;
-            text-align: left;
-            margin-bottom: 1.5rem;
-        }
-        
-        .log-entry {
-            margin-bottom: 0.5rem;
-            font-size: 0.9rem;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            padding-bottom: 0.5rem;
-        }
-        
-        .log-time {
-            color: #aaa;
-            margin-right: 0.5rem;
-        }
-        
-        .log-message {
-            color: #ddd;
-        }
-        
-        .log-profit {
-            color: var(--success);
-        }
-        
-        .log-loss {
-            color: var(--danger);
-        }
-        
-        .typing-effect {
-            display: inline-block;
-            overflow: hidden;
-            border-right: 0.15em solid var(--primary);
-            white-space: nowrap;
-            margin: 0 auto;
-            letter-spacing: 0.15em;
-            animation:
-</html>
+# 🚀 Welcome to My World 🤘💰
+
+I am a driven finance enthusiast and quantitative developer with foundation in quantitative finance, economics, machine learning, and blockchain technologies. My journey began as a self-taught developer, fueled by curiosity and a passion for innovation. 
+
+Today, I continue in designing and implementing sophisticated trading algorithms, building blockchain tools and solutions, and pushing the boundaries of for Autonomous Quant Intelligence.
+
+
+# 🎯 What I Do
+
+- 🤖 Trading Bots & Quant Agents – Crafting intelligent bots for high-frequency and algorithmic trading.
+
+- 🔗 Blockchain & Memecoins – Exploring and developing on Solana, Ethereum, and beyond.
+
+- 📊 ML & DeFi Tools – Applying machine learning models to optimize market predictions and trading strategies.
+
+- 💡 Innovating & Researching – Always seeking new ways to automate, disrupt, and profit.
+  
+---
+
+## 🔭 Current Focus
+Exploring the dynamic nexus of economics, machine learning, and blockchain technology to drive impactful solutions in finance and technology.
+
+## 💬 Let's Collaborate
+Open to discussions and collaborations on:
+- Advanced trading algorithms
+- Blockchain development
+- Machine learning applications in finance
+
+## ⚡ Fun Fact
+Every groundbreaking idea started as a "crazy" thought.
+
+---
+
+### 🎯 Core Skills
+
+#### ⌨️ Programming Languages
+<p>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img alt="JavaScript"
+        src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"/></a>
+    <a href="https://www.python.org" target="_blank"><img alt="Python"
+        src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/></a>
+    <a href="https://docs.soliditylang.org" target="_blank"><img alt="Solidity"
+        src="https://img.shields.io/badge/Solidity-e6e6e6?style=for-the-badge&logo=solidity&logoColor=black"/></a>
+    <a href="https://www.typescriptlang.org" target="_blank"><img alt="TypeScript"
+        src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"/></a>
+    <a href="https://go.dev" target="_blank"><img alt="Go"
+        src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white"/></a>
+    <a href="https://www.rust-lang.org" target="_blank"><img alt="Rust"
+        src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white"/></a>
+</p>
+
+- [🐍 Vyper](https://vyper.readthedocs.io)
+- [🦀 Move](https://move-language.github.io/move/)
+
+#### 🎛 Frameworks and Runtime Environments
+<p>
+    <a href="https://angular.io" target="_blank"><img alt="Angular"
+        src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white"/></a>
+    <a href="https://nodejs.org" target="_blank"><img alt="Node.js"
+        src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white"/></a>
+    <a href="https://pytorch.org" target="_blank"><img alt="PyTorch"
+        src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=PyTorch&logoColor=white"/></a>
+    <a href="https://www.tensorflow.org" target="_blank"><img alt="TensorFlow"
+        src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white"/></a>
+    <a href="https://nestjs.com" target="_blank"><img alt="NestJS"
+        src="https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white"/></a>
+    <a href="https://nextjs.org" target="_blank"><img alt="Next.js"
+        src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white"/></a>
+</p>
+
+#### ⚒️ Development Tools
+<p>
+    <a href="https://hardhat.org" target="_blank"><img alt="Hardhat"
+        src="https://img.shields.io/badge/Hardhat-FFF100?style=for-the-badge&logo=hardhat&logoColor=black"/></a>
+    <a href="https://trufflesuite.com" target="_blank"><img alt="Truffle"
+        src="https://img.shields.io/badge/Truffle-2CA07A?style=for-the-badge&logo=truffle&logoColor=white"/></a>
+</p>
+
+- [DappTools](https://github.com/dapphub/dapptools)
+- [Foundry](https://github.com/foundry-rs/foundry)
+- [Anchor](https://project-serum.github.io/anchor/)
+
+#### 🗃 Dependency and Environment Management
+<p>
+    <a href="https://docs.conda.io" target="_blank"><img alt="Conda"
+        src="https://img.shields.io/badge/conda-342B029?&style=for-the-badge&logo=anaconda&logoColor=white"/></a>
+    <a href="https://www.npmjs.com" target="_blank"><img alt="npm"
+        src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white"/></a>
+    <a href="https://pnpm.io" target="_blank"><img alt="pnpm"
+        src="https://img.shields.io/badge/pnpm-%234a4a4a?style=for-the-badge&logo=pnpm&logoColor=f69220"/></a>
+    <a href="https://yarnpkg.com" target="_blank"><img alt="Yarn"
+        src="https://img.shields.io/badge/Yarn-2C8EBB?style=for-the-badge&logo=yarn&logoColor=white"/></a>
+    <a href="https://www.docker.com" target="_blank"><img alt="Docker"
+        src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"/></a>
+</p>
+
+#### 🛠 Cloud & Infrastructure
+<p>
+    <a href="https://aws.amazon.com" target="_blank"><img alt="AWS"
+        src="https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white"/></a>
+    <a href="https://www.cloudflare.com" target="_blank"><img alt="Cloudflare"
+        src="https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=Cloudflare&logoColor=white"/></a>
+    <a href="https://kubernetes.io" target="_blank"><img alt="Kubernetes"
+        src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white"/></a>
+    <a href="https://www.terraform.io" target="_blank"><img alt="Terraform"
+        src="https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white"/></a>
+</p>
+
+#### 🔧 Development Tools & Libraries
+<p>
+    <a href="https://git-scm.com" target="_blank"><img alt="Git"
+        src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/></a>
+    <a href="https://www.postman.com" target="_blank"><img alt="Postman"
+        src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white"/></a>
+    <a href="https://numpy.org" target="_blank"><img alt="NumPy"
+        src="https://img.shields.io/badge/Numpy-777BB4?style=for-the-badge&logo=numpy&logoColor=white"/></a>
+    <a href="https://opencv.org" target="_blank"><img alt="OpenCV"
+        src="https://img.shields.io/badge/OpenCV-27338e?style=for-the-badge&logo=OpenCV&logoColor=white"/></a>
+    <a href="https://scipy.org" target="_blank"><img alt="SciPy"
+        src="https://img.shields.io/badge/SciPy-654FF0?style=for-the-badge&logo=SciPy&logoColor=white"/></a>
+</p>
+
+#### 🌐 Web3 & Blockchain
+<p>
+    <a href="https://docs.ethers.io" target="_blank"><img alt="ethers.js"
+        src="https://img.shields.io/badge/ethers.js-1C1C1C?style=for-the-badge&logo=ethereum&logoColor=white"/></a>
+    <a href="https://web3js.readthedocs.io" target="_blank"><img alt="web3.js"
+        src="https://img.shields.io/badge/web3.js-F16822?style=for-the-badge&logo=web3.js&logoColor=white"/></a>
+    <a href="https://thegraph.com" target="_blank"><img alt="The Graph"
+        src="https://img.shields.io/badge/The_Graph-6747ED?style=for-the-badge&logo=thegraph&logoColor=white"/></a>
+</p>
+
+---
+
+![Visitors](https://komarev.com/ghpvc/?username=pcaversaccio&color=blue&style=flat&label=Visitors)
