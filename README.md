@@ -153,7 +153,7 @@ graph BT
 
 | Metric              | Status                                                                 |
 |---------------------|-----------------------------------------------------------------------|
-| **Total Repos**     | ![Repos](https://img.shields.io/badge/Repositories-20+-blue)          |
+| **Total Repos**     | ![Repos](https://img.shields.io/badge/Repositories-200+-blue)          |
 | **Active Projects** | ![Active](https://img.shields.io/badge/Active%20Projects-8-green)     |
 | **Languages**       | ![Languages](https://img.shields.io/badge/Languages-5+-yellow)        |
 
